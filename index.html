@@ -16,15 +16,41 @@
     </h1>
  
     <div class = "game-area">
-        <div class = "current-word">
-
-        </div>
-        <div class = "question-area"></div>
-        <span id = "letters"></span>
-        <p class = "answer-message">Enter Answer:</p>
-        <input type="text" id="answer-box">
-    </div>
-        <button class="button">Submit Letter</button>
+        <table class="word-spaces">
+            <legend>Your Word is: </legend>
+            <tbody>
+              <tr></tr>
+            </tbody>
+          </table>
+          <br/>
+          <fieldset class="guessIn">
+            <legend>
+              Guess a Letter
+            </legend>
+            <label for="form">Type a Letter then Click <kbd>Enter</kbd></label>
+            <input type="text" id="form" class="form-control" placeholder="guess">
+      
+          </fieldset>
+      
+          <table class="wrongLetters">
+            <caption>Letters Guessed Wrong:</caption>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+       
     <div class = "score-area">
         <p class = "scores">Words <span id = "score">0</span></p>
         <p class = "scores">Points <span id = "points">0</span></p>
